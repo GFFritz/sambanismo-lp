@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sambanismo - House Dance Conference 2023</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body class="bg-mainbg text-white overflow-x-hidden">
+  <section>
+    <div x-data="{ open: false }" class="bg-primaryBg shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="/"><img src="img/logo.svg" alt="Logo"></a>
+        <button @click="open = !open" class="lg:hidden text-primary">
+          <div class="w-6 h-6 relative">
+            <div class="space-y-1 group">
+              <span class="block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+              <span class="ms-1 block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+              <span class="block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+            </div>
+          </div>
+        </button>
+        <div class="hidden lg:flex">
+          <ul class="lg:flex space-x-6">
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./index.html">Home</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./records.html">Records</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+            <li class="mx-auto">
+              <span class="text-zinc-500 font-normal text-[18px]">Experience</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        x-show="open"
+        x-transition:enter="transform ease-out duration-300 transition-translate-opacity"
+        x-transition:enter-start="translate-y-10 opacity-0"
+        x-transition:enter-end="translate-y-0 opacity-100"
+        x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
+        x-transition:leave-start="translate-y-0 opacity-100"
+        x-transition:leave-end="translate-y-10 opacity-0"
+        class="lg:hidden"
+      >
+        <ul class="bg-primaryBg p-4 flex flex-col justify-center space-y-4">
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./index.html">Home</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./records.html">Records</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+          <li class="mx-auto">
+            <span class="text-zinc-500 font-normal text-[32px]">Experience</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 mb-10">
+    <img class="hidden md:flex w-full" src="img/experience-banner.png" alt="Banner" >
+    <img class="flex md:hidden" src="img/experience-banner-mobile.png" alt="Banner" >
+  </section>
+
+  <section>
+    <div class="container px-0 md:px-20 text-xs md:text-base font-light">
+      <span>
+        The concept for Sambanismo was conceived by Edson Gonzaga (known artistically as Edson Guiu) in 2012 with the intention of providing a platform for independent artists, showcasing their talent and offering opportunities in a market that may have been otherwise inaccessible. Rooted in Edson's heritage and musical vision, Sambanismo emerged as an international movement dedicated to harnessing the energies and rhythms of house music while infusing the vibrant essence of Brazilian culture. Over the years, it has not only become a musical endeavor but an encompassing urban art movement. In 2020, amidst challenging times, the Sambanismo Seminar was conceived, uniting pioneers of urban dance forms, accomplished dancer professionals, and renowned DJs from the underground house and hip-hop scenes for a series of online events. The Sambanismo Seminar brought together the global music and dance community in an online meeting multiple times for dance workshops, seminars, parties, sessions with live DJs. It was an event that featured the participation from urban dance pioneers for lectures and classes on history, theory, cultural significance and practical applications translated into several languages. The success of the online event inspired the creation of the Sambanismo Art Festival in São Paulo, Brazil and in the USA starting with Boston, Massachusetts. This is a groundbreaking celebration of diverse cultures, weaving together genres like samba, salsa, hip-hop, house, with various Brazilian and African forms of movement and dance rooted in authenticity and rich cultural heritage
+      </span>
+
+      <div class="grid grid-flow-row md:grid-flow-row grid-cols-1 md:grid-cols-3 justify-between my-16 px-10 md:px-20 gap-10">
+        <iframe class="w-full h-[150px] rounded-2xl" src="https://www.youtube-nocookie.com/embed/oc8nz2qiSKE?si=Ytv-R0yf6zoGjhP4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-[150px] rounded-2xl" src="https://www.youtube-nocookie.com/embed/pOirqxvwSCI?si=I_daG-0jDwtYgqGk&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-[150px] rounded-2xl" src="https://www.youtube-nocookie.com/embed/KZcYNm8arGk?si=6AEpkE4x67g-EKP9&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-[150px] rounded-2xl" src="https://www.youtube-nocookie.com/embed/Jg8q6D6VfWQ?si=VllxBE56Mv7NFG1R&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-[150px] rounded-2xl" src="https://www.youtube-nocookie.com/embed/Hdzc-ywFEaE?si=yOd3CvUgyvU737bk&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="w-full h-[150px] rounded-2xl" src="https://www.youtube-nocookie.com/embed/QcPN7M935Gk?si=QcPN7M935Gk&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <span>
+        The Sambanismo Art Festival in Boston, Massachusetts stands as a pioneering effort, uniting an array of urban and Brazilian dances alongside music, a concept unprecedented in Brazil. The brainchild of Edson Gonzaga, the Sambanismo Art Festival draws upon his extensive global experience, as well as his revered reputation in the field. With three successful online editions, the festival has evolved, now offering dance classes in various styles, seminars featuring creators and pioneers, enriching experiences, and thoughtful discussions, all centered around the theme of urban dances. This platform transcends generations, engaging audiences across a spectrum of artistic expressions, making it a truly one-of-a-kind experience.
+      </span>
+    </div>
+  </section>
+
+  <section class="bg-primaryBg px-10 py-10 lg:px-32 lg:py-36 flex flex-col md:flex-row justify-center md:justify-between gap-20 md:gap-0 text-center md:text-left mt-20 md:mt-40">
+    <div class="flex flex-col justify-center md:items-center md:w-3/12 gap-6">
+      <div class="flex flex-col gap-6">
+        <h1 class="uppercase text-xl font-bold">Samba<b class="text-primary font-normal">nismo</b></h1>
+        <div class="text-sm">An international dance, music and art event dedicated to harnessing the energies and rhythms of music with the vibrant essence of brazilian culture.</div>
+      </div>
+    </div>
+    <div class="justify-center md:items-center flex flex-col md:w-3/12 font-normal">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-primary uppercase text-xl">Menu</h1>
+        <ul class="flex flex-col gap-4 text-sm">
+          <li>
+            <a class="hover:text-zinc-300" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-zinc-300" href="./records.html">Sambanismo Records</a>
+          </li>
+          <li>
+            <a class="hover:text-zinc-300" href="./experience.html">Sambanismo Experience</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center md:items-center md:w-3/12">
+      <div class="flex flex-col gap-6 items-center md:items-start">
+        <h1 class="text-primary uppercase text-xl">Social</h1>
+        <a class="" href="#">
+          <img class="w-8" src="img/instagram-icon.svg" alt="instagram-icon">
+        </a>
+      </div>
+    </div>
+  </section>
+</body>

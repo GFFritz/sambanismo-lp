@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sambanismo - House Dance Conference 2023</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body class="bg-mainbg text-white overflow-x-hidden">
+  <section>
+    <div x-data="{ open: false }" class="bg-primaryBg shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="/"><img src="img/logo.svg" alt="Logo"></a>
+        <button @click="open = !open" class="lg:hidden text-primary">
+          <div class="w-6 h-6 relative">
+            <div class="space-y-1 group">
+              <span class="block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+              <span class="ms-1 block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+              <span class="block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+            </div>
+          </div>
+        </button>
+        <div class="hidden lg:flex">
+          <ul class="lg:flex space-x-6">
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./index.html">Home</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+            <li class="mx-auto">
+              <span class="text-zinc-500 font-normal text-[18px]">Records</span>
+            </li>
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./experience.html" disabled>Experience</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        x-show="open"
+        x-transition:enter="transform ease-out duration-300 transition-translate-opacity"
+        x-transition:enter-start="translate-y-10 opacity-0"
+        x-transition:enter-end="translate-y-0 opacity-100"
+        x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
+        x-transition:leave-start="translate-y-0 opacity-100"
+        x-transition:leave-end="translate-y-10 opacity-0"
+        class="lg:hidden"
+      >
+        <ul class="bg-primaryBg p-4 flex flex-col justify-center space-y-4">
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./index.html">Home</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+          <li class="mx-auto">
+            <span class="text-zinc-500 font-normal text-[32px]">Records</span>
+          </li>
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./experience.html">Experience</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 mb-10">
+    <img class="hidden md:flex w-full" src="img/records-banner.png" alt="Banner" >
+    <img class="flex md:hidden" src="img/records-banner-mobile.png" alt="Banner" >
+  </section>
+
+  <section>
+    <div class="container px-0 md:px-20 text-xs md:text-base font-light">
+      <span>
+        Sambanismo Records, founded in 2012 by the Brazilian artist Edson Gonzaga, also known under aliases Edson Guiu & DJ G, stands as a beacon for Edson's unique musical vision. It is a label dedicated to sculpting the dynamic forces and rhythms of Brazilian house music, intertwining the vivacious essence of Brazilian culture to forge a new generation of house music. The label boasts upcoming releases from notable artists like Kenny Bobien, Shane the Golden Voice, and Sandra in the forthcoming year.<br><br>
+        Collaborations with DJs such as DJ Beloved, Adam Rios, Mark Francis, DJ Sam One, and Shann S have been ongoing, resulting in tracks featuring talented musicians like Davi Jardim, Vinicius Dora, Vinicius Chagas, and Helder Percussionista, all contributing to the evolving sounds that promise to redefine samba music. DJ G's extensive global club experience has provided valuable insights into audience reactions, all of which have been overwhelmingly positive.
+      </span>
+
+      <div class="flex flex-col md:flex-row justify-between my-16 px-10 gap-6 md:gap-20">
+        <iframe class="w-full h-[70px] md:h-[120px]" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdjgbrazil%2Fdj-g-sambanismo-01%2F" frameborder="0" ></iframe>
+        <iframe class="w-full h-[70px] md:h-[120px]" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdjgbrazil%2Fdj-g-sambanismo-02%2F" frameborder="0" ></iframe>
+        <iframe class="w-full h-[70px] md:h-[120px]" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdjgbrazil%2Fdj-g-sambanismo-03%2F" frameborder="0" ></iframe>
+      </div>
+
+      <span>
+        Sambanismo Records remains committed to nurturing emerging talent, supporting aspiring singers and musicians, with Edson Guiu confident in the emergence of a fresh sound. With two tracks already released, there's a promise of more to come. Watch out for this rising producer, as he endeavors to carry House Music on a transformative journey through his homeland, channeling the true essence and vigor of Brazil, fused with his profound love for House music and its cultural roots.
+      </span>
+    </div>
+  </section>
+
+  <section class="bg-primaryBg px-10 py-10 lg:px-32 lg:py-36 flex flex-col md:flex-row justify-center md:justify-between gap-20 md:gap-0 text-center md:text-left mt-20 md:mt-40">
+    <div class="flex flex-col justify-center md:items-center md:w-3/12 gap-6">
+      <div class="flex flex-col gap-6">
+        <h1 class="uppercase text-xl font-bold">Samba<b class="text-primary font-normal">nismo</b></h1>
+        <div class="text-sm">An international dance, music and art event dedicated to harnessing the energies and rhythms of music with the vibrant essence of brazilian culture.</div>
+      </div>
+    </div>
+    <div class="justify-center md:items-center flex flex-col md:w-3/12 font-normal">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-primary uppercase text-xl">Menu</h1>
+        <ul class="flex flex-col gap-4 text-sm">
+          <li>
+            <a class="hover:text-zinc-300" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-zinc-300" href="#">Sambanismo Records</a>
+          </li>
+          <li>
+            <a class="hover:text-zinc-300" href="./experience.html">Sambanismo Experience</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center md:items-center md:w-3/12">
+      <div class="flex flex-col gap-6 items-center md:items-start">
+        <h1 class="text-primary uppercase text-xl">Social</h1>
+        <a class="" href="#">
+          <img class="w-8" src="img/instagram-icon.svg" alt="instagram-icon">
+        </a>
+      </div>
+    </div>
+  </section>
+</body>

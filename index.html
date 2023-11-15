@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sambanismo - House Dance Conference 2023</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body class="bg-mainbg text-white overflow-x-hidden">
+  <section>
+    <div x-data="{ open: false }" class="bg-primaryBg shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="/"><img src="img/logo.svg" alt="Logo"></a>
+        <button @click="open = !open" class="lg:hidden text-primary">
+          <div class="w-6 h-6 relative">
+            <div class="space-y-1 group">
+              <span class="block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+              <span class="ms-1 block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+              <span class="block w-5 h-1 rounded-[1px] bg-primary group-hover:bg-primary-alt"></span>
+            </div>
+          </div>
+        </button>
+        <div class="hidden lg:flex">
+          <ul class="lg:flex space-x-6">
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./index.html">Home</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./records.html">Records</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+            <li class="group mx-auto">
+              <a class="text-zinc-50 group-hover:text-primary font-normal text-[18px]" href="./experience.html">Experience</a>
+              <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        x-show="open"
+        x-transition:enter="transform ease-out duration-300 transition-translate-opacity"
+        x-transition:enter-start="translate-y-10 opacity-0"
+        x-transition:enter-end="translate-y-0 opacity-100"
+        x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
+        x-transition:leave-start="translate-y-0 opacity-100"
+        x-transition:leave-end="translate-y-10 opacity-0"
+        class="lg:hidden"
+      >
+        <ul class="bg-primaryBg p-4 flex flex-col justify-center space-y-4">
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./index.html">Home</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./records.html">Records</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+          <li class="group mx-auto">
+            <a class="text-zinc-50 hover:text-primary font-normal text-[32px]" href="./experience.html">Experience</a>
+            <span class="block w-8 h-1 rounded-[1px] bg-primaryBg group-hover:bg-primary"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:container w-screen bg-[url(img/hero-img.gif)] bg-no-repeat bg-right py-24">
+    <div class="flex flex-col">
+      <div class="uppercase mx-auto md:mx-0 text-center md:text-left">
+        <h1 class="text-[40px] leading-[47px] md:text-[94px] font-normal md:leading-[114px]">
+          Sambanismo
+        </h1>
+        <div class="text-primary font-normal text-[25px] md:text-[68px] md:leading-[82px]">
+          Seminar <span class="font-black">Boston</span>
+        </span>
+      </div>
+      <div class="bg-primaryBg rounded-xl py-7 w-[391px] px-5 mt-14">
+        <div class="px-6 text-center mb-8">
+          An international dance, music and art event dedicated to harnessing the energies and rhythms of music with the vibrant essence of Brazilian culture.<br> 
+          <span class="text-zinc-500 text-sm">April 26, 27, 28, 2024</span>
+        </div>
+        <a class="bg-btn uppercase rounded-full w-full flex justify-center py-1 text-mainbg text-[20px] font-bold cursor-pointer shadow-alt hover:saturate-200" href="#">
+          Buy Now
+        </a>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Teacher Section -->
+  <section class="container bg-primaryBg px-4 py-8 md:px-6 md:py-16 flex flex-col justify-center md:items-center rounded-[2rem] my-5">
+    <div class="text-[30px] leading-[37px] md:text-[52px] md:leading-[64px] font-semibold uppercase text-primary">2024<br class="flex md:hidden"> TEACHERS</div>
+    <!-- <div class="hidden md:flex justify-center items-center text-white text-[18px] leading-[22px]">Reference site about Lorem Ipsum.</div> -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+      <img src="img/teacher-1.png" alt="teacher-1">
+      <img src="img/teacher-2.png" alt="teacher-2">
+      <img src="img/teacher-3.png" alt="teacher-3">
+      <img src="img/teacher-4.png" alt="teacher-4">
+      <img src="img/teacher-5.png" alt="teacher-5">
+      <img src="img/teacher-6.png" alt="teacher-6">
+      <img src="img/teacher-7.png" alt="teacher-7">
+      <img src="img/teacher-8.png" alt="teacher-8">
+      <img src="img/teacher-9.png" alt="teacher-9">
+      <img src="img/teacher-10.png" alt="teacher-10">
+      <img src="img/teacher-11.png" alt="teacher-11">
+      <img src="img/teacher-12.png" alt="teacher-12">
+    </div>
+  </section>
+
+  <!-- After Party section -->
+  <section class="container bg-primary text-black px-5 md:px-10 py-7 md:py-16 flex flex-col md:flex-row justify-center items-center rounded-[2rem] my-5">
+    <div class="flex justify-between w-full md:w-1/3 items-center">
+      <div class="uppercase md:w-3/4">
+        <h2 class="font-bold text-[14px] leading-[17px] lg:text-[18px] lg:leading-[22px] flex gap-3 items-center align-middle md:ms-3">
+          <img src="img/dance-man-icon.svg" alt="dance-man-icon" class="hidden md:block"> 
+          Sambanismo<br>Seminar
+        </h2>
+        <h2 class="font-bold text-[30px] leading-[37px] md:text-[52px] md:leading-[64px] mt-3">After<br >party</h2>
+        <h3 class="text-zinc-500 text-[14px] leading-[17px] lg:text-[18px] lg:leading-[22px]">Sunday, April 28, 2024</h3>
+        <a href="#" class="rounded-full text-primary bg-black w-full text-center font-bold uppercase py-2 text-[20px] hidden md:block md:mt-6 hover:bg-zinc-900">Buy Ticket - 20$</a>
+      </div>
+      <div class="me-5 md:hidden">
+        <img src="img/globe-icon.svg" alt="Globe">
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4 my-4 md:w-2/3">
+      <img src="img/dj-g.png" alt="teacher-1">
+      <img src="img/dj-spinna.png" alt="teacher-1">
+    </div>
+    <div class="flex w-full md:hidden">
+      <a href="#" class="rounded-full text-primary bg-black w-full text-center font-bold uppercase py-2 text-[20px] hover:bg-zinc-900">Buy Ticket 20$</a>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section class="container md:bg-primaryBg text-black py-7 md:py-16 flex flex-col justify-center md:items-center rounded-[2rem] my-5 px-0">
+    <div class="text-primary font-bold text-[30px] leading-[37px] md:text-[52px] md:leading-[64px] uppercase mb-5 w-full md:text-center">
+      Select Your <br class="block md:hidden">Pass
+    </div>
+    <div class="flex flex-col md:flex-row md:grid grid-cols-8 mx-auto justify-center item-center gap-6">
+      <div class="bg-secondaryBg px-5 pt-10 pb-3 rounded-[2rem] col-span-2 cursor-default">
+        <div class="text-secondary flex flex-row justify-between items-center">
+          <div class="flex justify-between gap-5 uppercase font-bold text-[12px] leading-[15px]">
+            december 1st<br> to january 30
+          </div>
+          <div class="text-[45px] leading-[50px] font-bold text-primary">
+            250$
+          </div>
+        </div>
+        <a href="#" class="flex justify-center items-center rounded-full text-primary bg-black py-3 text-[20px] leading-[24px] font-bold uppercase mt-5 hover:bg-zinc-900">Buy Now</a>
+      </div>
+  
+      <div class="bg-secondaryBg px-5 pt-10 pb-3 rounded-[2rem] col-span-2 cursor-default">
+        <div class="text-secondary flex flex-row justify-between items-center">
+          <div class="flex justify-between gap-5 uppercase font-bold text-[12px] leading-[15px]">
+            march 30
+          </div>
+          <div class="text-[45px] leading-[50px] font-bold text-primary">
+            320$
+          </div>
+        </div>
+        <a href="#" class="flex justify-center items-center rounded-full text-primary bg-black py-3 text-[20px] leading-[24px] font-bold uppercase mt-5 hover:bg-zinc-900">Buy Now</a>
+      </div>
+
+      <div class="bg-secondaryBg px-5 pt-10 pb-3 rounded-[2rem] col-span-2 cursor-default">
+        <div class="text-secondary flex flex-row justify-between items-center">
+          <div class="flex justify-between gap-5 uppercase font-bold text-[12px] leading-[15px]">
+            april 25
+          </div>
+          <div class="text-[45px] leading-[50px] font-bold text-primary">
+            400$
+          </div>
+        </div>
+        <a href="#" class="flex justify-center items-center rounded-full text-primary bg-black py-3 text-[20px] leading-[24px] font-bold uppercase mt-5 hover:bg-zinc-900">Buy Now</a>
+      </div>
+  
+      <div class="bg-primary px-5 pt-10 pb-3 rounded-[2rem] col-span-2 cursor-default">
+        <div class="text-black flex flex-row justify-center items-center">
+          <div class="text-[45px] leading-[50px] font-bold text-white">
+            400$
+          </div>
+        </div>
+        <div class="flex justify-center items-center text-black py-3 text-[20px] leading-[24px] font-bold uppercase mt-5">Entry on time</div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Section Join -->
+  <section class="container bg-primaryBg text-white py-10 md:py-16 flex flex-col lg:hidden justify-center md:items-center rounded-[2rem] my-5 px-7 gap-6">
+    <div class="flex justify-between items-start">
+      <h1 class="text-primary font-bold text-[30px] md:text-[40px] leading-[37px] md:leading-[49px] mt-4 uppercase">
+        Join <br>dancers <br>in 100+<br> countries
+      </h1>
+      <img src="img/globe-icon-alt.svg" alt="globe-icon-alt">
+    </div>
+    <!-- <div class="text-white text-[18px] leading-[22px] font-medium">
+      Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+    </div> -->
+  </section>
+
+  <section class="container px-0 py-2 lg:hidden">
+    <div class="flex gap-6 justify-between ">
+      <div><img src="img/plan-img-1.png" alt=""></div>
+      <div><img src="img/plan-img-2.png" alt=""></div>
+    </div>
+    <div class="my-6">
+      <img src="img/plan-img-3.png" alt="">
+    </div>
+  </section>
+
+  <!-- Section Join -->
+  <section class="container bg-primaryBg hidden lg:flex p-8 rounded-[2rem] gap-8">
+
+    <div class="flex flex-col gap-11">
+      <img src="img/join-1.png" alt="">
+      <div class="w-full">
+        <img class="w-3/5 float-right" src="img/join-2.png" alt="">
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-8 w-2/4">
+      <div class="flex flex-col justify-between items-start bg-black rounded-[2rem] px-10 py-9">
+        <div class="text-white text-[18px] leading-[22px] font-normal flex gap-16">
+          <img class="ms-6" src="img/dance-couple.svg" alt="">
+          <span class="">Let’s dance together,<br> celebrate diversity,<br> and spread the joy of dance around the world!</span>
+        </div>
+        <h1 class="text-primary font-bold text-[40px] leading-[49px] mt-4 uppercase">
+          Join <br>dancers <br>in 100+<br> countries
+        </h1>
+      </div>
+      <img src="img/join-3.png" alt="">
+    </div>
+
+    <div>
+      <img src="img/join-4.png" alt="">
+    </div>
+  </section>
+
+  <!-- Gallery section -->
+  <section class="container py-8 flex flex-col lg:flex-row items-center gap-20 xl:gap-0">
+    <div class="flex flex-col xl:w-1/4">
+      <h1 class="uppercase text-primary font-bold text-[52px]">GALLERY</h1>
+      <span class="text-[18px] leading-[22px]">Sambanismo Boston 2023</span>
+    </div>
+    <div class="w-3/4 flex justify-center bg-none md:bg-[url(img/bg-gallery.png)] bg-no-repeat bg-center items-center md:bg-auto">
+      <div class="w-[310px] h-[520px] md:w-[414px] gallery-item md:h-[610px]" data-index="1">
+          <img class="object-cover rounded-[2rem]" src="img/gallery/img-1.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="2">
+          <img src="img/gallery/img-2.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="3">
+          <img src="img/gallery/img-3.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="4">
+          <img src="img/gallery/img-4.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="5">
+          <img src="img/gallery/img-5.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="6">
+          <img src="img/gallery/img-6.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="7">
+          <img src="img/gallery/img-7.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="8">
+          <img src="img/gallery/img-8.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="9">
+          <img src="img/gallery/img-9.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="10">
+          <img src="img/gallery/img-10.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="11">
+          <img src="img/gallery/img-11.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="12">
+          <img src="img/gallery/img-12.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="13">
+          <img src="img/gallery/img-13.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="14">
+          <img src="img/gallery/img-14.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="15">
+          <img src="img/gallery/img-15.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="16">
+          <img src="img/gallery/img-16.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="17">
+          <img src="img/gallery/img-17.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="18">
+          <img src="img/gallery/img-18.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="19">
+          <img src="img/gallery/img-19.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="20">
+          <img src="img/gallery/img-20.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="21">
+          <img src="img/gallery/img-21.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="22">
+          <img src="img/gallery/img-22.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="23">
+          <img src="img/gallery/img-23.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="24">
+          <img src="img/gallery/img-24.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="25">
+          <img src="img/gallery/img-25.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="26">
+          <img src="img/gallery/img-26.jpg">
+      </div>
+      <div class="gallery-item hidden" data-index="27">
+          <img src="img/gallery/img-27.jpg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Seminars -->
+  <section class="container bg-primaryBg text-white py-6 md:py-16 flex flex-col lg:flex-row justify-center lg:justify-between md:items-center rounded-[2rem] my-5 px-7 lg:px-20">
+    <h1 class="text-primary font-bold text-[30px] md:text-[40px] leading-[37px] md:leading-[49px] text-center uppercase lg:hidden">
+      Seminars
+    </h1>
+    <div class="flex justify-center gap-10  mt-6 lg:items-center">
+      <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6">
+        <div class="mx-auto lg:order-2">
+          <img src="img/globe-icon-alt.svg" alt="">
+        </div>
+        <span class="text-primary text-[18px] leading-[22px] lg:order-1 lg:text-[32px] lg:leading-[39px] lg:font-normal">Bouston</span>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:items-center gap-2 ">
+        <div class="mx-auto">
+          <img class="lg:blur-[2px] lg:w-10/12" src="img/globe-icon-3.svg" alt="">
+        </div>
+        <span class="text-secondary text-[18px] leading-[22px] lg:blur-[2px]">São paulo</span>
+      </div>
+    </div>
+    <div class="hidden lg:flex text-primary text-[41px] leading-[64px] uppercase font-bold items-center w-3/4 justify-end">
+      SAMBANISMO SEMINARS<br>
+      AROUND THE WORLD
+    </div>
+  </section>
+
+  <section class="bg-primaryBg">
+    <div class="container py-10 lg:py-36 flex flex-col md:flex-row justify-center md:justify-between gap-20 md:gap-0 text-center md:text-left">
+      <div class="flex flex-col justify-center md:items-center md:w-3/12 gap-6">
+        <div class="flex flex-col gap-6">
+          <h1 class="uppercase text-xl font-bold">Samba<b class="text-primary font-normal">nismo</b></h1>
+          <div class="text-sm">An international dance, music and art event dedicated to harnessing the energies and rhythms of music with the vibrant essence of brazilian culture.</div>
+        </div>
+      </div>
+      <div class="justify-center md:items-center flex flex-col md:w-3/12 font-normal">
+        <div class="flex flex-col gap-6">
+          <h1 class="text-primary uppercase text-xl">Menu</h1>
+          <ul class="flex flex-col gap-4 text-sm">
+            <li>
+              <a class="hover:text-zinc-300" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-zinc-300" href="./records.html">Sambanismo Records</a>
+            </li>
+            <li>
+              <a class="hover:text-zinc-300" href="./experience.html">Sambanismo Experience</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="flex flex-col justify-center md:items-center md:w-3/12">
+        <div class="flex flex-col gap-6 items-center md:items-start">
+          <h1 class="text-primary uppercase text-xl">Social</h1>
+          <a class="" href="https://www.instagram.com/sambanismorecords/" target="_blank">
+            <img class="w-8" src="img/instagram-icon.svg" alt="instagram-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
