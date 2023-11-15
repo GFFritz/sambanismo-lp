@@ -576,10 +576,6 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.col-span-3{
-  grid-column: span 3 / span 3;
-}
-
 .float-right{
   float: right;
 }
@@ -607,11 +603,6 @@ video {
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-10{
@@ -759,12 +750,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.cursor-pointer{
-  cursor: pointer;
-}
-
 .cursor-default{
   cursor: default;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .grid-flow-row{
@@ -779,16 +770,8 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-7{
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
 .grid-cols-8{
   grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1047,16 +1030,16 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
 .text-center{
   text-align: center;
 }
 
 .align-middle{
   vertical-align: middle;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .text-\[14px\]{
@@ -1091,12 +1074,12 @@ video {
   font-size: 41px;
 }
 
-.text-\[52px\]{
-  font-size: 52px;
+.text-\[45px\]{
+  font-size: 45px;
 }
 
-.text-\[70px\]{
-  font-size: 70px;
+.text-\[52px\]{
+  font-size: 52px;
 }
 
 .text-sm{
@@ -1112,22 +1095,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[12px\]{
-  font-size: 12px;
-}
-
-.text-\[65px\]{
-  font-size: 65px;
-}
-
-.text-\[55px\]{
-  font-size: 55px;
-}
-
-.text-\[45px\]{
-  font-size: 45px;
 }
 
 .font-black{
@@ -1158,6 +1125,10 @@ video {
   text-transform: uppercase;
 }
 
+.leading-\[15px\]{
+  line-height: 15px;
+}
+
 .leading-\[17px\]{
   line-height: 17px;
 }
@@ -1182,24 +1153,12 @@ video {
   line-height: 49px;
 }
 
-.leading-\[64px\]{
-  line-height: 64px;
-}
-
-.leading-\[86px\]{
-  line-height: 86px;
-}
-
-.leading-\[23px\]{
-  line-height: 23px;
-}
-
-.leading-\[15px\]{
-  line-height: 15px;
-}
-
 .leading-\[50px\]{
   line-height: 50px;
+}
+
+.leading-\[64px\]{
+  line-height: 64px;
 }
 
 .text-black{
@@ -1421,18 +1380,8 @@ video {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
-.hover\:saturate-50:hover{
-  --tw-saturate: saturate(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .hover\:saturate-200:hover{
   --tw-saturate: saturate(2);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.hover\:saturate-150:hover{
-  --tw-saturate: saturate(1.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1623,11 +1572,6 @@ video {
   .md\:leading-\[82px\]{
     line-height: 82px;
   }
-
-  .md\:text-secondary{
-    --tw-text-opacity: 1;
-    color: rgb(112 112 112 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1024px){
@@ -1671,16 +1615,6 @@ video {
     gap: 1.5rem;
   }
 
-  .lg\:bg-primary{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 184 0 / var(--tw-bg-opacity));
-  }
-
-  .lg\:bg-secondaryBg{
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  }
-
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1714,21 +1648,6 @@ video {
 
   .lg\:leading-\[39px\]{
     line-height: 39px;
-  }
-
-  .lg\:text-black{
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-
-  .lg\:text-primary{
-    --tw-text-opacity: 1;
-    color: rgb(255 184 0 / var(--tw-text-opacity));
-  }
-
-  .lg\:text-white{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .lg\:blur-\[2px\]{
