@@ -29,6 +29,7 @@ module.exports = {
       },
       boxShadow: {
         'alt': '0px 0px 17px 0px #52FF00',
+        'yellow': '0px 0px 17px 0px #FFB800',
       },
     },
   },
